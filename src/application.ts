@@ -11,3 +11,17 @@ product.register(homeScreen1);
 product.register(homeScreen2);
 
 product.stock = 96;
+console.log("=====================================")
+
+
+// Builder
+console.log("\n***************** Builder Pattern **********************\n")
+import Student from "./builder/Student";
+
+const st = Student.getBuilder().setName("Mayur").setAge(20).setMobile(123).build();
+
+console.log(st.name, st.age, st.mobile);
+console.log("=====================================")
+
+
+
